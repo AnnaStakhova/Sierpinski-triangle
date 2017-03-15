@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sierpinski Triangle Explorer</title>
+    <link rel="icon" href="img/ico.gif" type="image/gif" sizes="16x16">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Sierpinski Triangle Explorer</h1>
+    </header>
+    <section>
+      <p>This application is the assignment for the <a href="https://careers.peopleclick.com/careerscp/client_arm/external/jobDetails.do?functionName=getJobDetail&jobPostId=29391&localeCode=en-us" target="_blank"> Junior Web Application Engineer(9691)</a> position in Arm. It is written in JavaScript and HTML/CSS to draw a <a href="https://en.wikipedia.org/wiki/Sierpinski_triangle" target="_blank">Sierpinski triangle</a>  with support zooming and punning.</p>
+      <div class="btn-group">
+        <a id = "plus">+</a>
+        <a id = "minus">-</a>
+        <label id = "scale">1 : 1</label>
+        <a id = "restart">Restart</a>
+        <a class="popup" onclick="popUp()" id = "hint">?
+          <span class="popuptext" id="myPopup">
+            Use mouse scroll or +/- buttons for zooming<br />  Use mouse click and move for panning
+          </span>
+        </a>
+      </div>
+    </section>
+    <section>
+      <canvas id="siCanvas"></canvas>
+    </section>
+    <footer>
+      <p>&copy; 2017 created by <a href="https://www.linkedin.com/in/anna-stakhova-713131b8/" target="_blank">Anna Stakhova</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
